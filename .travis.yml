@@ -6,6 +6,7 @@
 # http://conda.pydata.org/docs/travis.html
 language: python
 
+
 env:
     - CONDA="python=2.7 numpy=1.7"
     - CONDA="python=3.3 numpy"
@@ -38,5 +39,3 @@ script:
       nosetests --exe -v oct2py;
     fi
 
-after_success:
-    - coveralls
